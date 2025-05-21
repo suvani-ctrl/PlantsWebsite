@@ -1,0 +1,85 @@
+/* 2025 Stylish Plant Showcase */
+.services-section {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: #f4f4f4;
+  padding: 4rem 2rem;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.services-title {
+  text-align: center;
+  font-size: 2.8rem;
+  margin-bottom: 3rem;
+  color: #d0ffce;
+  text-shadow: 0 0 6px #5fffa9;
+}
+
+.plants-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  padding: 0;
+}
+
+.plant-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.plant-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5);
+}
+
+.plant-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 2px solid #39ff14;
+}
+
+.plant-info {
+  padding: 1rem 1.2rem;
+}
+
+.plant-name {
+  margin: 0.5rem 0;
+  font-size: 1.6rem;
+  color: #aaffaa;
+}
+
+.plant-scientific {
+  font-style: italic;
+  color: #c0ffee;
+  margin-bottom: 0.8rem;
+}
+
+.plant-desc {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+  color: #f1f1f1;
+}
+
+.plant-meta {
+  list-style: none;
+  padding: 0;
+  font-size: 0.85rem;
+  color: #b0f7c9;
+}
+
+.plant-meta li {
+  margin-bottom: 0.3rem;
+}
+
+.loading, .error {
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 3rem;
+}
